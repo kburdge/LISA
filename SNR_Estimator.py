@@ -121,7 +121,7 @@ def SNR(RA,Dec,m1,m2,i,d,p):
 
     delta_f=T*fdot
     
-    signal=1/2*(FxFx*hcross*hcross+FplusFplus*hplus*hplus)*4*delta_f
+    signal=(FxFx*hcross*hcross+FplusFplus*hplus*hplus)*4*delta_f
     avg_signal=np.mean(signal)
     std_signal=np.std(signal)
 
